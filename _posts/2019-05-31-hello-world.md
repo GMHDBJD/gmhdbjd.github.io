@@ -5,6 +5,9 @@ categories:
     - hello world
 tag:
     - test
+header:
+    image: /assets/images/hello_world.jpg
+    teaser: /assets/images/hello_world.jpg
 ---
 
 
