@@ -14,21 +14,20 @@ header:
     teaser: /assets/images/web_crawler.jfif
 ---
 
-**定义**
+# 定义
 
 每时每刻，搜索引擎和网站都在采集大量信息，非原创即采集。采集信息用的程序一般被称为  网络爬虫（Web crawler）、网络铲（Web scraper，可类比考古用的洛阳铲）、网络蜘蛛（Web spider），其行为一般是先“爬”到对应的网页上，再把需要的信息“铲”下来。
 
-**应用**
+# 应用
 
 爬取数据用于数据挖掘与分析，数据建模，机器学习，网站测试，搜索引擎，推荐引擎...
 
-**常用语言**
 
+# 常用语言
 Python、Java、PHP、C#、Go...
 
 
 # 发送请求
-
   * ## get
     发送一个请求获得网页 
     ```python
@@ -71,6 +70,8 @@ Python、Java、PHP、C#、Go...
     }
     response = requests.get("http://www.baidu.com", proxies=proxies)
     ```
+
+
 # 解析网页
   * ## 选择器
     解析网页，抽取数据，从网页中获得其他链接 
@@ -102,6 +103,8 @@ Python、Java、PHP、C#、Go...
     re.match(r"^[0-9a-zA-Z_]{0,19}@[0-9a-zA-Z]{1,13}\.[com,cn,net]{1,3}$", str)   #匹配所有邮箱
     re.match(r"^1(3[0-9]|4[57]|5[0-35-9]|7[0135678]|8[0-9])\d{8}$", str)   #匹配所有手机号 
     ```
+
+
 # 数据存储
   * ## SQL
     ```python
@@ -137,6 +140,8 @@ Python、Java、PHP、C#、Go...
     spamwriter.writerow(row)
     csv_file.close()
     ```
+
+
 # 动态爬虫
 爬取有*js*的网页
   * selenium
@@ -153,11 +158,15 @@ Python、Java、PHP、C#、Go...
   * PyV8
   * Ghost
   * execjs
+
+
 # 爬虫框架
   * Scrapy
   * Crawley
   * Portia
   * Newspaper
+
+
 # 盗亦有道
   * robots 协议
 
